@@ -27,7 +27,7 @@ This DX-style FM is actually phase modulation (PM) using short modulated delays
 but it is often called FM (frequency modulation) as it produces the same harmonics.
 Using a carrier and modulator at the same frequency or harmonically-related (in-tune) frequencies produces a harmonic spectrum. 
 Carriers and modulators at inharmonic (out-of-tune) frequencies relative to each other produces a dissonant spectrum.
-
+#
 
 # PWM
 

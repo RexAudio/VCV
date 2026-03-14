@@ -6,7 +6,7 @@
   "version": "2.0.0",
   "license": "GPL-3.0-or-later",
   "manualUrl": "https://github.com/RexAudio/VCV/blob/main/README.md",
-  "sourceUrl": "https://github.com/RexAudio/VCV"
+  "sourceUrl": "https://github.com/RexAudio/VCV",
   "donateUrl": "https://paypal.me/RexAudioDSP",
   "modules": [
     {

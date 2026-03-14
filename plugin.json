@@ -16,10 +16,10 @@
       "tags": ["Effect", "Polyphonic"]
     },
     {
-      "slug": "PWM",
-      "name": "PWM",
-      "description": "Pulse-Width modulation effect with audio input",
-      "tags": ["Effect", "Delay", "Polyphonic"]
-    }
+      "slug": "PWM",
+      "name": "PWM",
+      "description": "Pulse-Width modulation effect with audio input",
+      "tags": ["Effect", "Delay", "Polyphonic"]
+    }
   ]
 }

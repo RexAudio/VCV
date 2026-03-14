@@ -14,7 +14,7 @@
       "name": "FM Tool",
       "description": "DX-style FM/PM effect with audio input",
       "tags": ["Effect", "Polyphonic"]
-    }
+    },
     {
       "slug": "PWM",
       "name": "PWM",

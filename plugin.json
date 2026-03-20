@@ -13,12 +13,14 @@
       "slug": "FMtool",
       "name": "FM Tool",
       "description": "DX-style FM/PM effect with audio input",
+      "manualUrl": "https://github.com/RexAudio/VCV/blob/main/README.md#fm-tool",
       "tags": ["Effect", "Polyphonic"]
     },
     {
       "slug": "PWM",
       "name": "PWM",
       "description": "Pulse-Width modulation effect with audio input",
+      "manualUrl": "https://github.com/RexAudio/VCV/blob/main/README.md#pwm",
       "tags": ["Effect", "Delay", "Polyphonic"]
     }
   ]

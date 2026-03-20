@@ -5,7 +5,7 @@ FLAGS +=
 CFLAGS +=
 CXXFLAGS +=
 
-SOURCES += src/FMtool.cpp
+SOURCES += $(wildcard src/*.cpp)
 
 DISTRIBUTABLES += res
 

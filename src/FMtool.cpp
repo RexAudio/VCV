@@ -2,7 +2,7 @@
 
 using namespace rack;
 
-Plugin* pluginInstance;
+extern Plugin* pluginInstance;
 
 struct FMtool : Module {
     enum ParamIds {
@@ -129,8 +129,3 @@ struct FMtoolWidget : ModuleWidget {
 };
 
 Model* modelFMtool = createModel<FMtool, FMtoolWidget>("FMtool");
-
-void init(rack::Plugin* p) {
-    pluginInstance = p;
-    p->addModel(modelFMtool);
-}

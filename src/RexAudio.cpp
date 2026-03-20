@@ -3,12 +3,14 @@ using namespace rack;
 
 Plugin *pluginInstance;
 
-extern Model *modelFMTool;
+//add modules here:
+extern Model *modelFMtool;
 extern Model *modelPWM;
 
 void init(rack::Plugin *plugin) {
     pluginInstance = plugin;
-    
-    plugin->addModel(modelFMTool);
+
+    //add modules here:
+    plugin->addModel(modelFMtool);
     plugin->addModel(modelPWM);
 }

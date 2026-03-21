@@ -36,11 +36,18 @@ PWM allows you to do pulse width modulation with any audio input.
 
 ![PWM Module Mockup](images/pwmmockup2.svg)
 
+## Mode
+Right-click to see the menu and choose the mode:
+## Comparator mode:
+The default mode. It works for all kinds of signals and is similar to analog PWM modules, but very narrow pulse widths produce distortion, the pulse width can change depending on the level of the input, and the output is at full scale volume. The V/Oct input does <u>not</u> need to be connected in this mode. 
+## Delay mode:
+This mode works best with sawtooth inputs, and with the V/Oct input connected, but it can also be used with just the audio input.  This mode retains more of the character of the audio input instead of creating perfect pulse waves, and it can sometimes sound similar to a chorus or flanger. 
+
 ## In
 The audio input. 
 
 ## V/OCT in
-Input for voltage/octave signals. This allows keytracking of the chosen pulse width so each note has the same width.
+Input for voltage/octave signals. This allows keytracking of the chosen pulse width so each note has the same width. This input is not needed in comparator mode but is recommended in delay mode.
 
 ## Pulse Width
 Controls the pulse width. At 50% it will produce square waves with odd harmonics. Away from 50% it begins to produce even harmonics. Near 0% and 100% it produces a narrow, thin sounding pulse. 
@@ -61,5 +68,7 @@ A dry/wet control. At 100% you get full PWM.
 An audio output
 
 ## Notes
-This module works better with the V/Oct input connected which affects the delay times, but it can be used with just the audio input. The width changes the shape and harmonics of a waveform, and width modulation can be used to add richness and a chorus-like effect. 
-It uses a short delay with inverted polarity to create Pulse-Width Modulation. It retains some of the character of the audio input instead of creating perfect pulse waves. At 100% mix, the input audio and the delayed sound are mixed equally, giving full PWM. To avoid clicks when changing notes, the plugin uses crossfaded delays when the V/oct input changes by a semitone or more, and uses delay time glide for smaller or very fast pitch changes to track legato, vibrato and fast arpeggios in the V/Oct signals. To reduce the sharpness caused by this method of PWM, the plugin uses lowpass filters on the input and output.
+The delay mode uses delays with inverted polarity to create PWM. To avoid clicks when changing notes, the plugin uses crossfaded delays when the V/oct input changes by a semitone or more, and uses delay time glide for smaller or very fast pitch changes to track legato, vibrato and fast arpeggios in the V/Oct signals. 
+
+The comparator mode uses a level threshold and outputs a positive pulse when the input is above the threshold, and a negative pulse otherwise. This mode also uses a gate to prevent DC offset. The output of this mode is loud, so we recommend using a vca after it. This mode can cause aliasing. 
+To reduce the sharpness caused by these methods of PWM, the plugin also contains lowpass filters.

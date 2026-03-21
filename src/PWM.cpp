@@ -275,13 +275,13 @@ struct PWMWidget : ModuleWidget {
         menu->addChild(new MenuEntry);
         menu->addChild(createMenuLabel("Algorithm Mode"));
         
-        menu->addChild(createCheckMenuItem("Comparator Mode (Digital)",
+        menu->addChild(createCheckMenuItem("Comparator Mode",
             "",
             [module]() { return module->params[PWM::MODE_PARAM].getValue() > 0.5f; },
             [module]() { module->paramQuantities[PWM::MODE_PARAM]->setValue(1.f); }
         ));
         
-        menu->addChild(createCheckMenuItem("Delay Mode (Inverted)",
+        menu->addChild(createCheckMenuItem("Delay Mode",
             "",
             [module]() { return module->params[PWM::MODE_PARAM].getValue() < 0.5f; },
             [module]() { module->paramQuantities[PWM::MODE_PARAM]->setValue(0.f); }

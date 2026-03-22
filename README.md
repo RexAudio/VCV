@@ -34,7 +34,7 @@ Carriers and modulators at inharmonic (out-of-tune) frequencies relative to each
 ## Overview
 PWM allows you to do pulse width modulation with any audio input. 
 
-![PWM Module Mockup](images/pwmmockup2.svg)
+![PWM Module Mockup](images/pwmmockup3.svg)
 
 ## Mode
 Right-click to see the menu and choose the mode:
